@@ -1,5 +1,7 @@
 function Sample() {
-  return <div>Sample</div>
+  return (
+  <div>Sample Test</div>
+  )
 }
 
 export default Sample

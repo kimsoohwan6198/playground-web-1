@@ -1,10 +1,12 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+// pages/index.js
+import React from "react"
+import KakaoLoginButton from './login/page'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      
+
+    <main >
+      <KakaoLoginButton />
     </main>
-  )
+  );
 }
