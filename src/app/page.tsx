@@ -4,7 +4,7 @@ import KakaoLoginButton from './login/page'
 
 export default function Home() {
   return (
-
+ 
     <main >
       <KakaoLoginButton />
     </main>

@@ -21,7 +21,7 @@ const KakaoCallback = () => {
         //         const { access_token } = res.data;
         //     }
         // )
-
+ 
         const param: any = {
             grant_type: 'authorization_code',
             client_id: '7e7b63658cacaa73e2a412dcd713bb8a',
@@ -40,11 +40,14 @@ const KakaoCallback = () => {
         const queryString = Object.keys(param).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(param[key])).join('&')
         console.log('queryString ::', queryString+ ', {}, { headers: { "Content-type": "application/x-www-form-urlencoded;charset=utf-8" } }')
         console.log('test ::', queryString, {}, config)
-
+        // access_token 발급받기
         axios.post('https://kauth.kakao.com/oauth/token?' + queryString, {}, config).then()
-              // access_token 발급받기
+              
         
-        
+        /**
+         * access_token 발급을 받으려고 값을 보내는데 보낼때의 형태를 잘 모르겠습니다
+         * 
+         */
         
     }, [])
     

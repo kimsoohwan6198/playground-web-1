@@ -25,6 +25,6 @@ export default function KakaoLoginButton() {
         height={35}
         style={{ margin: '0px 24px 16px 24px' }}
       />
-    </div>
+    </div> 
   );
 }
