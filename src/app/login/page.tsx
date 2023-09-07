@@ -1,6 +1,8 @@
 // components/KakaoLoginButton.js
 // import React from "react"
 'use client'
+
+import kakaoimg from '../../app/img/kakao_login.jpg'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
@@ -19,8 +21,8 @@ export default function KakaoLoginButton() {
   return (
     <div onClick={handleLoginClick}>
       <Image
+        src= {kakaoimg}
         alt='카카오로그인'
-        src= '/img/kakao_login.jpg'
         width={255}
         height={35}
         style={{ margin: '0px 24px 16px 24px' }}
