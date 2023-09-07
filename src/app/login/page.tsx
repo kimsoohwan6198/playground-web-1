@@ -16,7 +16,7 @@ export default function KakaoLoginButton() {
     console.log('grantType ::', CLIENT_ID)
     console.log('REST_API_KEY ::', kakaoURL)
     router.push(kakaoURL)
-  };
+  }
 
   return (
     <div onClick={handleLoginClick}>
@@ -28,5 +28,5 @@ export default function KakaoLoginButton() {
         style={{ margin: '0px 24px 16px 24px' }}
       />
     </div> 
-  );
+  )
 }
